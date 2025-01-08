@@ -1,0 +1,24 @@
+:root {
+
+    --white: #FFFFFF;
+    --black: #003444;
+    --primary-color: var(--black);
+    --primary-color-alt: #F6F3E8;
+    --secundary-color: #C3BCA4;
+
+    --secundary-color-light: rgba(246, 243, 232, 1);
+    --accent-color: #FFC700;
+    --hover-color: rgba(65, 53, 8, 1);
+    --accent2-color: #FFC700;
+
+    --color-lightgray: #003444;
+
+    --border-color: var(--black);
+
+    --heading-font: "Poppins", sans-serif;
+    --site-font: "Poppins", sans-serif;
+
+    --background-color-4: var(--secundary-color);
+
+    --border-radius: 1rem;
+}
