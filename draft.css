@@ -146,7 +146,6 @@ button:hover {
     align-items: center;
     display: inline-flex;
     font-size: var(--font-size-normal);
-    width: 80%;
     max-width: 400px;
 }
 
