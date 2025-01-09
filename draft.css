@@ -134,9 +134,9 @@ button:hover {
 
 /* Knop geel */
 .btn-geel {
-    align-self: baseline;
+    justify-self: center;
     background-color: var(--button-color);
-    color: var(--primary-text-color);
+    color: white;
     padding: 0.7em 1.4em;
     border-radius: 100px;
     text-decoration: none;
@@ -146,6 +146,7 @@ button:hover {
     align-items: center;
     display: inline-flex;
     font-size: var(--font-size-normal);
+    width: 80%;
 }
 
 .btn-geel img {
