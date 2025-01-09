@@ -133,7 +133,7 @@ button:hover {
 }
 
 /* Knop geel */
-a.btn-geel {
+.btn-geel {
     align-self: baseline;
     background-color: var(--button-color);
     color: var(--primary-text-color);

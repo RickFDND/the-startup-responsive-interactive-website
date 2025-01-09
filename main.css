@@ -103,12 +103,13 @@ body{
     object-fit: cover;
   }
   header{
+    position: sticky;
+      top: 0;
+      left: 0;
     img{
       height: 120px;
       width: auto;
-      position: sticky;
-      top: 0;
-      left: 0;
+      
     }
   }
   main{
