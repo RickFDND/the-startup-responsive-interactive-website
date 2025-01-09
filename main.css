@@ -151,6 +151,10 @@ body{
     max-width: 400px;
   }
 
+  .tekst2{
+    max-width: 450px;
+  }
+
   .beroepen{
     display: flex;
     gap: 1rem;
@@ -169,8 +173,17 @@ body{
     border: solid 1px var(--border-color);
     border-radius: 50px;
     width: 350px;
-      height: 424px;
-    
+    height: 424px;
+  }
+
+  .more-text{
+    text-align: center;
+    justify-self: center;
+    max-width: 500px;
+  }
+
+  .nieuwsbrief{
+    background-color: #FFC70080;
   }
 
   .end{
