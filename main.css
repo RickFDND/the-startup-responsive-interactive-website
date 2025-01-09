@@ -120,12 +120,19 @@ body{
   .startscreen{
     text-align: center;
       h1, p{
+        justify-self: center;
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.6);
         color: var(--white);
         span{
           color: var(--accent-color);
         }
+      }
+      h1{
+        max-width: 600px;
+      }
+      p{
+        max-width: 310px;
       }
     }
     form{
