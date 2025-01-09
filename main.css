@@ -148,7 +148,7 @@ body{
       color:var(--white);
       input{
         justify-self: center;
-        border-radius: 50px;
+        border-radius: var(--border-radius);
         height: 28px;
         width: 75%;
         border: none;
@@ -167,7 +167,7 @@ body{
     article{
       height: 434px;
       min-width: 350px;
-      border: solid 1px var(--black);
+      border: solid 1px var(--border-color);
       border-radius: 50px;
     }
   }
