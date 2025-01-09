@@ -118,6 +118,9 @@ body{
   }
   .headings{
     text-align: center;
+    h1{
+      font-size: var(--);
+    }
     h1, p{
       padding: 5px;
       background-color: rgba(0, 0, 0, 0.6);
@@ -144,31 +147,24 @@ body{
         }
       }
     }
-    .search{
-      color:var(--white);
-      input{
-        justify-self: center;
-        border-radius: var(--border-radius);
-        height: 28px;
-        width: 75%;
-        border: none;
-      }
+    form{
+      color: white;
     }
   }
   .introtekst{
     text-align: center;
   }
   .beroepen{
-    display: flex;
-    overflow: scroll;
-    width: 375px;
+    overflow: auto;
+    white-space: nowrap;
     margin: 1px;
     gap: 1em;
     article{
-      height: 434px;
-      min-width: 350px;
+      display: inline-block;
+      text-decoration: none;
       border: solid 1px var(--border-color);
       border-radius: 50px;
+      height: 424px
     }
   }
 
