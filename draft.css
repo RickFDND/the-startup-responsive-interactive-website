@@ -147,6 +147,7 @@ button:hover {
     display: inline-flex;
     font-size: var(--font-size-normal);
     width: 80%;
+    max-width: 400px;
 }
 
 .btn-geel img {
