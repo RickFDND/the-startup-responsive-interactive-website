@@ -71,11 +71,11 @@ body{
     max-width: 400px;
   }
 
-  .tekst2{
+  .text2{
     max-width: 450px;
   }
 
-  .beroepen{
+  .jobs{
     display: flex;
     gap: 1rem;
     overflow: auto;
@@ -102,7 +102,7 @@ body{
     max-width: 500px;
   }
 
-  .nieuwsbrief{
+  .nieuwsletter{
     background-color: #FFC70080;
   }
 
@@ -118,7 +118,7 @@ body{
   }
 
 @media (min-width:1100px){
-  .beroepen{
+  .jobs{
     justify-content: center;
   }
 }
