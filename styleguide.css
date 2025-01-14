@@ -150,6 +150,11 @@ body {
 body {
     background-color: var(--website-background);
     color: var(--main-text-color);
+    font-family: 'Poppins', sans seriff;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: normal;
+    font-stretch: normal;
 }
 
 /* =============================================
@@ -159,17 +164,14 @@ body {
 h1{
     font-size: var(--font-size-huge);
     font-family: var(--heading-font);
-    line-height: var(--line-height-huge);
 }
 h2{
     font-size: var(--font-size-medium);
     font-family: var(--heading-font);
-    line-height: var(--line-height-huge);
 }
 p{
     font-size: var(--font-size-small);
     font-family: var(--site-font);
-    line-height: var(--line-height-normal);
 }
 
 form {
