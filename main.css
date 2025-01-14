@@ -85,6 +85,10 @@ body{
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    @media (min-width:1100px){
+        justify-content: center;
+    }
   }
 
   .card{
@@ -126,7 +130,7 @@ body{
       justify-content: center;
       position: relative;
       gap: 50px;
-      animation: Slideshow 25s infinite ease;
+      animation: Slideshow 25s linear infinite;
     }
   }
   @keyframes Slideshow {
@@ -149,9 +153,5 @@ body{
     color: var(--white);
   }
 
-@media (min-width:1100px){
-  .content{
-    justify-content: center;
-  }
-}
+
 
