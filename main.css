@@ -9,7 +9,6 @@
 
 body{
   display: grid;
-  grid-template-rows: 124px, auto;
   font-family: "icomoon";
   
   .background-image{

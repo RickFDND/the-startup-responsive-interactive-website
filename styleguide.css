@@ -68,7 +68,7 @@ body {
 }
 
 h1{
-    font-size: var(--font-size-huge);
+    font-size: var(--font-size-large);
     font-family: var(--heading-font);
 }
 h2{
@@ -217,7 +217,7 @@ button:hover {
 .btn-geel {
     justify-self: center;
     background-color: var(--button-color);
-    color: white;
+    color: var(--black);
     padding: 0.7em 1.4em;
     border-radius: 100px;
     text-decoration: none;
@@ -228,6 +228,7 @@ button:hover {
     display: inline-flex;
     font-size: var(--font-size-normal);
     max-width: 400px;
+    cursor: pointer;
 }
 
 .btn-geel img {
