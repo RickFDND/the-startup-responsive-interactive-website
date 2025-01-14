@@ -10,6 +10,7 @@
 body{
   display: grid;
   grid-template-rows: 124px, auto;
+  font-family: "icomoon";
   
   .background-image{
     position: absolute;
@@ -27,15 +28,15 @@ body{
     img{
       height: 120px;
       width: auto;
-      
     }
   }
   main{
     display: grid;
     grid-template-rows: 736px;
-    gap: 0.5em;
+    gap: 1em;
     }
   }
+
   .startscreen{
     text-align: center;
       h1, p{
@@ -76,39 +77,50 @@ body{
   }
 
   .jobs{
-    display: flex;
     gap: 1rem;
     overflow: auto;
   }
 
   .content{
-    display: grid;
-    align-content: center;
+    display: flex;
+    align-items: center;
     gap: 1rem;
-    
   }
 
   .card{
-  padding: 2rem;
-    border: solid 1px var(--border-color);
-    border-radius: 50px;
-    width: 350px;
-    height: 424px;
+    background-color: var(--white);
+    display: grid;
+    border: solid 1px ;
+    border-radius: 20px;
+    min-height: 460px;
+    min-width: 350px;
+    max-width: 390px;
+    object-fit: cover;
+    img{
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      width: 100%;
+      height: 12rem;
+    }
   }
 
   .more-text{
     text-align: center;
     justify-self: center;
-    max-width: 500px;
+    max-width: 80%;
   }
 
-  .nieuwsletter{
-    background-color: #FFC70080;
+  .newsletter{
+    justify-self: center;
+    background-color: var(--secondary-color-light);
+    border-radius: var(--border-radius);
+    max-width: 90%;
   }
 
   .end{
     background-color: var(--accent-color);
   }
+
   footer{
     display: flex;
     gap: 2%;
@@ -118,7 +130,7 @@ body{
   }
 
 @media (min-width:1100px){
-  .jobs{
+  .content{
     justify-content: center;
   }
 }

@@ -131,13 +131,17 @@ body {
    Custom Fonts
    ============================================= */
 
-@font-face {
+   @font-face {
     font-family: 'icomoon';
-    src: url('/fonts/icomoon.woff') format('woff');
+    src:  url('../fonts/icomoon.eot?kxkprt');
+    src:  url('../fonts/icomoon.eot?kxkprt#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?kxkprt') format('truetype'),
+      url('../fonts/icomoon.woff?kxkprt') format('woff'),
+      url('../fonts/icomoon.svg?kxkprt#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
-}
+  }
 
 /* =============================================
    Standaard Elementen
