@@ -9,8 +9,6 @@
 
 body{
   display: grid;
-  font-family: "icomoon";
-  
   .background-image{
     position: absolute;
     left: 0;
@@ -21,6 +19,9 @@ body{
     object-fit: cover;
   }
   header{
+    display: grid;
+    justify-content: right;
+    grid-template-columns: 1fr 4fr;
     position: sticky;
       top: 0;
       left: 0;
@@ -28,6 +29,29 @@ body{
       height: 120px;
       width: auto;
     }
+    nav{
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      button{
+        display: grid;
+        margin-right: 1.5em;
+        background: none;
+        border: none;
+        row-gap: 5px;
+        span{
+          background-color: rgb(0, 0, 0);
+          border-radius: 15px;
+          width: 35px;
+          height: 7px;
+        }
+      }
+    }
+  }
+  .hamburger-menu-open{
+    background-color: red;
+    height: 100vh;
+    width: 100%;
   }
   main{
     display: grid;
@@ -120,25 +144,49 @@ body{
     max-width: 90%;
   }
 
-  .cleaning-numbers{
-    display: grid;
-    gap: 10px;
-    overflow: hidden;
+.cleaning-numbers{
+  display: grid;
+  justify-content: center;
+  max-width: 380px;
+  @media (min-width:500px){
+    max-width: 500px;
+  }
+  @media (min-width:600px){
+    max-width: 700px;
+  }
+  @media (min-width:800px){
+    max-width: 800px;
+  }
+  @media (min-width:900px){
+    max-width: 900px;
+  }
+}
     .slider{
       display: flex;
-      justify-content: center;
+      overflow: hidden;
+      height: 300px;
+      width: 100%;
       position: relative;
-      gap: 50px;
-      animation: Slideshow 25s linear infinite;
+      column-gap: 7em;
+      .stats{
+        display: grid;
+        flex-direction: ;
+        width: 100px;
+        height: 200px;
+        animation: Slideshow 15s linear infinite;
+        h2{
+          font-size: 16px;
+        }
+      }
     }
-  }
-  @keyframes Slideshow {
-    0% {transform: translateX(25%);}
-    25% {transform:translateX(0%)}
-    50% {transform:translateX(-25%)}
-    75% {transform:translateX(-50%)}
-    100% {transform:translateX(-75%)}
-}
+      @keyframes Slideshow {
+        0% { transform: translateX(0); }
+        20% { transform: translateX(-150%); }
+        40% { transform: translateX(-300%); }
+        60% { transform: translateX(-450%); }
+        80% {transform:translateX(-600%);}
+        100% { transform: translateX(0); }
+    }
   
   .end{
     background-color: var(--accent-color);
