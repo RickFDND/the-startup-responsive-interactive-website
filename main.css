@@ -40,10 +40,10 @@ body{
         border: none;
         row-gap: 5px;
         span{
-          background-color: rgb(0, 0, 0);
+          background-color: var(--white);
           border-radius: 15px;
           width: 35px;
-          height: 7px;
+          height: 5px;
         }
       }
     }
@@ -144,6 +144,28 @@ body{
     max-width: 90%;
   }
 
+  .begin-tomorrow, .no-education-needed, .good-money{
+    display: grid;
+    border: solid 1px ;
+    border-radius: 20px;
+    min-height: 460px;
+    min-width: 350px;
+    max-width: 390px;
+    a{
+      max-height: 3rem;
+    }
+  }
+  .begin-tomorrow{
+    background-color: var(--accent-color);
+    a{
+      background-color:var(--white) ;
+    }
+  }
+  .good-money{
+    background-color: var(--secondary-color-light);
+  }
+
+
 .cleaning-numbers{
   display: grid;
   justify-content: center;
@@ -159,6 +181,9 @@ body{
   }
   @media (min-width:900px){
     max-width: 900px;
+  }
+  @media (min-width:1100px){
+    max-width: 100%;
   }
 }
     .slider{
