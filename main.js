@@ -6,12 +6,6 @@ hamburgerMenu.addEventListener('click', function(){
 })
 
 //header zwarte achtergrond
-let BodyMenu = document.querySelector('body');
-let HeadMenu = document.querySelector('header');
-BodyMenu.addEventListener('scroll', () =>{
-    HeadMenu.classList.toggle('black-header');
-})
-
 const logo = document.querySelector('header');
     if (logo) {
         window.addEventListener('scroll', () => {
