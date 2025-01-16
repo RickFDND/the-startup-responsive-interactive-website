@@ -60,21 +60,19 @@ body{
     justify-content: right;
     grid-template-columns: 1fr 4fr;
     position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      max-height: 135px;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 135px;
     img{
       height: 120px;
       width: auto;
       margin-top: 0.4em;
       margin-left: 0.4em;
     }
-
     nav{
       display: flex;
       justify-content: right;
-      transition: 0.3s ease;
       ul{
         opacity: 0;
         max-height: 120px;
@@ -82,20 +80,41 @@ body{
           list-style-type: none;
         }
       }
+      
       button{
         display: grid;
         margin-right: 1.5em;
-        margin-top: 1.5em;
+        margin-top: 2em;
         background: none;
         border: none;
         row-gap: 5px;
         align-items: center;
         max-height: 25px;
         span{
+          transition: 0.5s;
           background-color: var(--white);
           border-radius: 15px;
-          width: 35px;
+          width: 28px;
           height: 5px;
+        }
+      }
+    }
+    @media(min-width:1100px){
+      nav{
+        justify-content: center;
+        gap: 0.1em;
+        ul{
+          display: flex;
+          margin: auto;
+          gap: 1em;
+          color: white;
+          font-weight: 800;
+          font-size: 24px;
+          opacity: 1;
+        }
+        button{
+          position: absolute;
+          opacity: 0;
         }
       }
     }
@@ -114,10 +133,26 @@ body{
     position: absolute;
     top: -0.46em;
     left: -0.46em;
+    animation-name: FadeOut;
+    animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;  
+    transform-origin: top right;
     button{
       justify-self: right;
       grid-row: 1;
       grid-column: 2;
+      span:nth-child(1){
+        transform-origin: right;
+        transform: rotateZ(-45deg);
+      }
+      span:nth-child(2){
+        opacity: 0;
+      }
+      span:nth-child(3){
+        transform-origin: right;
+        transform: rotateZ(45deg)
+      }
     }
     ul{
       display: grid;
@@ -253,6 +288,13 @@ body{
       background-color:var(--white) ;
     }
   }
+  .no-education-needed{
+    background-image: url(./IMG/schoonmakertje.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+  }
   .good-money{
     background-color: var(--secondary-color-light);
   }
@@ -344,6 +386,21 @@ body{
     background-color: var(--black);
     color: var(--white);
     margin: auto;
+  }
+
+  @keyframes FadeOut{
+    0% {
+      transform: scale(10%) translate(100vw, -100vh);
+    }
+    33% {
+      transform: scale(30%) translate(50vw, -50vh);
+    }
+    66%{
+      transform: scale(60%) translate(20vw, -20vh);
+    }
+    100% {
+      transform: scale(100%) translate(0, 0);
+    }
   }
 
 
