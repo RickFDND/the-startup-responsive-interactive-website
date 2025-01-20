@@ -162,33 +162,32 @@ body{
     margin-top: 150px;
     grid-template-rows: 736px;
     gap: 1em;
-    }
+  }
   }
 
   .startscreen{
     text-align: center;
-      h1, p{
-        justify-self: center;
-        padding: 10px;
-        background-color: rgba(0, 0, 0, 0.6);
-        color: var(--white);
-        span{
-          color: var(--accent-color);
-        }
-      }
-      h1{
-        max-width: 600px;
-        margin-left: 0.1em;
-        margin-right: 0.1em;
-      }
-      p{
-        max-width: 310px;
+    h1, p{
+      justify-self: center;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: var(--white);
+      span{
+        color: var(--accent-color);
       }
     }
+    h1{
+      max-width: 600px;
+      margin-left: 0.1em;
+      margin-right: 0.1em;
+    }
+    p{
+      max-width: 310px;
+    }
+  }
     form{
       color: white;
       justify-items: center;
-      
       input{
         border-radius: 50px;
       }
@@ -199,12 +198,6 @@ body{
         max-width: 600px;
       }
     }
-  
-  .introtekst{
-    justify-self: center;
-    text-align: center;
-    max-width: 400px;
-  }
 
   .jobs{
     gap: 1rem;
@@ -255,6 +248,7 @@ body{
     border-radius: var(--border-radius);
     max-width: 90%;
   }
+
   .articles{
     display: flex;
     overflow: auto;
@@ -298,67 +292,70 @@ body{
   display: grid;
   justify-content: center;
   max-width: 380px;
-  @media (min-width:500px){
-    max-width: 500px;
+    @media (min-width:500px){
+      max-width: 500px;
+    }
+    @media (min-width:600px){
+      max-width: 700px;
+    }
+    @media (min-width:800px){
+      max-width: 800px;
+    }
+    @media (min-width:900px){
+      max-width: 900px;
+    }
+    @media (min-width:1100px){
+      max-width: 100%;
+    }
   }
-  @media (min-width:600px){
-    max-width: 700px;
-  }
-  @media (min-width:800px){
-    max-width: 800px;
-  }
-  @media (min-width:900px){
-    max-width: 900px;
-  }
-  @media (min-width:1100px){
-    max-width: 100%;
-  }
-}
-    .slider{
-      display: flex;
-      overflow: hidden;
-      height: 220px;
-      width: 100%;
-      position: relative;
-      column-gap: 7em;
-      z-index: -10;
-      margin-top: 1em;
-      .stats{
-        display: grid;
-        width: 100px;
-        height: 200px;
-        animation: Slideshow 15s linear infinite;
-        h2{
-          font-size: 16px;
-        }
+
+  .slider{
+    display: flex;
+    overflow: hidden;
+    height: 220px;
+    width: 100%;
+    position: relative;
+    column-gap: 7em;
+    z-index: -10;
+    margin-top: 1em;
+    .stats{
+      display: grid;
+      width: 100px;
+      height: 200px;
+      animation: Slideshow 15s linear infinite;
+      h2{
+        font-size: 16px;
       }
+    }
       @media(min-width: 736px){
        .stats{
         animation: none;
       }
     }
   }
-      @keyframes Slideshow {
-        0% { transform: translateX(0); }
-        20% { transform: translateX(-150%); }
-        40% { transform: translateX(-300%); }
-        60% { transform: translateX(-450%); }
-        80% {transform:translateX(-600%);}
-        100% { transform: translateX(0); }
-    }
 
-    .follow-us{
-      display: grid;
-      grid-template-rows: 1fr 2fr;
-      justify-items: center;
-      .socials{
-        display: flex;
-      }
-      img{
-        width: 80%;
-        max-width:175px;
-      }
+   @keyframes Slideshow {
+     0% { transform: translateX(0); }
+     20% { transform: translateX(-150%); }
+     40% { transform: translateX(-300%); }
+     60% { transform: translateX(-450%); }
+     80% {transform:translateX(-600%);}
+     100% { transform: translateX(0); }
+  }
+
+  .follow-us{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    justify-items: center;
+    .socials{
+      display: flex;
     }
+    img{
+      width: 80%;
+      max-width:175px;
+    }
+  }
+
   .end{
     background-color: var(--accent-color);
     article{
@@ -387,12 +384,5 @@ body{
       transform: scale(100%) translate(0, 0);
     }
   }
-/*
-  33% {
-    transform: scale(30%) translate(50vw, -50vh);
-  }
-  66%{
-    transform: scale(60%) translate(20vw, -20vh);
-  }
-    */
+
 
