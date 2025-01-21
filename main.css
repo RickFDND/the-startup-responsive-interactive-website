@@ -249,6 +249,10 @@ form {
       height: 12rem;
     }
   }
+
+  .head-button{
+    margin-top: 1em;
+  }
 }
 
 .information {
@@ -368,8 +372,6 @@ form {
 }
 
 .follow-us {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
   justify-items: center;
   
   .socials {
@@ -385,14 +387,23 @@ form {
 
 .page-end {
   background-color: var(--accent-color);
+  display: grid;
 
   @media(min-width:1000px) {
     display: flex;
   }
 
   article {
-    margin: 1em;
+    margin: 0.5em;
     max-width: 35em;
+
+    h2{
+      margin: 0;
+    }
+
+    p {
+      max-width: 27em;
+    }
   }
 }
 
