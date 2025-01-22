@@ -93,7 +93,7 @@ p{
     font-size: var(--font-size-small);
 }
 
-form {
+.form-start {
     display: grid;
     gap: 1em;
     padding: 2em;

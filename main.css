@@ -169,11 +169,12 @@ main {
   min-height: calc(100vh - 150px);
   padding-top: 150px;
   h1, p {
+    padding: 10px;
     margin-inline: 0.2em;
     padding-inline: 0.3em;
-    padding: 10px;
     background-color: rgba(0, 0, 0, 0.6);
     color: var(--white);
+
     span {
       color: var(--accent-color);
     }
@@ -181,18 +182,20 @@ main {
 
   h1 {
     max-width: 600px;
-    
-    @media(min-width:600px){
+
+
+    @media(min-width:600px) {
       margin-inline: auto;
     }
   }
 
   p {
     max-width: 310px;
+    margin-inline: auto;
   }
 }
 
-form {
+.form-start {
   color: white;
   justify-items: center;
 
@@ -262,6 +265,28 @@ form {
   background-color: var(--secondary-color-light);
   border-radius: var(--border-radius);
   max-width: 90%;
+
+  .form-open{
+    justify-items: center;
+    color: black;
+    text-align: left;
+    padding: 2em;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+
+    input{
+      border-radius: 50px;
+      width: 90%;
+    }
+  }
+}
+
+.newsletter-open {
+  
+  .form-open{
+    color: black;
+    text-align: left;
+  }
 }
 
 .articles {
@@ -282,7 +307,7 @@ form {
     min-width: 350px;
 
     p{
-      width: 330px;
+      width: 320px;
     }
 
     a {
@@ -394,6 +419,13 @@ form {
   article {
     margin: 0.5em;
     max-width: 35em;
+
+    ul{
+      padding-inline-start: 0;
+      li {
+        list-style-type: none;
+      }
+    }
 
     h2{
       margin: 0;

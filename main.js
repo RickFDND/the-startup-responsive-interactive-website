@@ -14,8 +14,8 @@ const logo = document.querySelector('header');
     }
 
 //newsletter
-let SignUp = document.querySelector('.btn-geel.1');
+let SignUp = document.querySelector('.random');
 let newsLetter = document.querySelector('.newsletter');
 SignUp.addEventListener('click', function(){
-    newsLetter.classList.toggle('newsletter-open');
+    newsLetter.classList.add('newsletter-open');
 })
