@@ -19,6 +19,7 @@ Ik ben natuurlijk mobile first begonnen dus zo ziet de mobiele versie eruit:
 <img src="./ReadMeImages/Screenshot_20250122-202634_Samsung Internet.jpg">
 <img src="./ReadMeImages/Screenshot_20250122-202642_Samsung Internet.jpg">
 <img src="./ReadMeImages/Screenshot_20250122-202649_Samsung Internet.jpg">
+
 Desktop versie:
 <img src="./ReadMeImages/Schermafbeelding 2025-01-22 204036.png">
 <img src="./ReadMeImages/Schermafbeelding 2025-01-22 204059.png">
