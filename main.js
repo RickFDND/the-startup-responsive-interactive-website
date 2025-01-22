@@ -12,3 +12,10 @@ const logo = document.querySelector('header');
             logo.classList.toggle('scrolled', window.scrollY > 0);
         });
     }
+
+//newsletter
+let SignUp = document.querySelector('.btn-geel.1');
+let newsLetter = document.querySelector('.newsletter');
+SignUp.addEventListener('click', function(){
+    newsLetter.classList.toggle('newsletter-open');
+})
