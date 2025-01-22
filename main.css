@@ -261,11 +261,15 @@ main {
 }
 
 .newsletter {
-  justify-self: center;
+  margin-inline: 0.5em;
   justify-items: center;
   background-color: var(--secondary-color-light);
   border-radius: var(--border-radius);
-  max-width: 90%;
+  max-width: 700px;
+
+  @media(min-width:700px) {
+    margin-inline: auto;
+  }
 
   .form-open{
     opacity: 0;
@@ -413,7 +417,6 @@ main {
     max-width:175px;
   }
 } 
-
 
 .page-end {
   background-color: var(--accent-color);
