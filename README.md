@@ -26,8 +26,16 @@ Desktop versie:
 <img src="./ReadMeImages/Schermafbeelding 2025-01-22 204117.png">
 <img src="./ReadMeImages/Schermafbeelding 2025-01-22 204154.png">
 <img src="./ReadMeImages/Schermafbeelding 2025-01-22 204211.png">
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+
+Poster Visual:
+<img src="./ReadMeImages/Schermafbeelding 2025-01-22 204718.png">
+
+Responsive Design:
+Verder heb ik de mobile first principe toegepast. Hierdoor moet je rekening houden met een klein scherm dus je moet alternatieven zoeken voor grote delen zoals een navigationbar. Hiervoor heb voor een breakpoint toegepast waardoor er een hamburger menu in beeld is totdat de pagina breder wordt dan 1100 pixels. Zo blijft de website gebruiksvriendelijk op elk apparaat. 
+
+Hier verdwijnt het hamburger menu nadat de 1100px aangetikt worden.
+https://github.com/RickFDND/the-startup-responsive-interactive-website/blob/main/main.css#L96-L99
+
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
