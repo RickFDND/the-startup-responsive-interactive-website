@@ -71,7 +71,7 @@ header {
       @media(min-width:1100px) {
         display: flex;
         margin: auto;
-        gap: 1em;
+        gap: 0.5em;
         color: white;
         font-weight: 800;
         font-size: 24px;
@@ -231,7 +231,7 @@ main {
     display: grid;
     border: solid 1px ;
     border-radius: 20px;
-    min-height: 460px;
+    min-height: 455px;
     min-width: 350px;
     max-width: 350px;
     object-fit: cover;
@@ -262,30 +262,37 @@ main {
 
 .newsletter {
   justify-self: center;
+  justify-items: center;
   background-color: var(--secondary-color-light);
   border-radius: var(--border-radius);
   max-width: 90%;
 
   .form-open{
-    justify-items: center;
+    opacity: 0;
+    position: absolute;
     color: black;
-    text-align: left;
     padding: 2em;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 
-    input{
+    input[type=text]{
       border-radius: 50px;
       width: 90%;
+    }
+    input[type=checkbox]{
+      max-width: 20px;
+    }
+    .sign-up{
+      display: flex;
+      margin-top: 0.5em;
     }
   }
 }
 
 .newsletter-open {
-  
   .form-open{
-    color: black;
-    text-align: left;
+    opacity: 1;
+    position:inherit;
   }
 }
 
@@ -324,11 +331,11 @@ main {
   }
 
   article:nth-of-type(2) {
-    background-image: url(./IMG/schoonmakertje.avif);
+    color: var(--white);
+    background-image: url(./IMG/darkened_image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: var(--white);
   }
 
   article:nth-of-type(3) {
