@@ -157,10 +157,6 @@ header {
   }
 }
 
-main {
-  
-}
-
 .startscreen {
   text-align: center;
   background: url('https://ontdekdeschoonmaak.nl/cdn-cgi/image/width=2362,height=1575,fit=crop,quality=70,format=auto,onerror=redirect,metadata=copyright/wp-content/uploads/2024/07/VEBEGO-Glas-re-edit-4.jpg' );
@@ -259,10 +255,10 @@ main {
 .information {
   margin: 1em;
   text-align: center;
-  margin-inline: auto;
   max-width: 40em;
   padding-top: 2em;
   padding-bottom: 2em;
+  margin-inline: auto;
 }
 
 .newsletter {
@@ -274,10 +270,6 @@ main {
 
   @media(min-width:700px) {
     margin-inline: auto;
-  }
-
-  a{
-       
   }
 
   .form-open{
@@ -429,14 +421,14 @@ main {
   .socials {
     display: flex;
     justify-content: center;
-    gap: 15%;
+    gap: 12%;
     padding-top: 1em;
     padding-inline: 2em;
   }
 
   img {
-    width: 100%;    
-    max-width:150px;
+    width: 100%;  
+    max-width: 150px;  
   }
 } 
 
