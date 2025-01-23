@@ -30,11 +30,14 @@ Desktop versie:
 Poster Visual:
 <img src="./ReadMeImages/Schermafbeelding 2025-01-22 204718.png">
 
-Responsive Design:
+<h2>Responsive Design:</h2>
 Verder heb ik de mobile first principe toegepast. Hierdoor moet je rekening houden met een klein scherm dus je moet alternatieven zoeken voor grote delen zoals een navigationbar. Hiervoor heb voor een breakpoint toegepast waardoor er een hamburger menu in beeld is totdat de pagina breder wordt dan 1100 pixels. Zo blijft de website gebruiksvriendelijk op elk apparaat. 
 
 Hier verdwijnt het hamburger menu nadat de 1100px aangetikt worden.
 https://github.com/RickFDND/the-startup-responsive-interactive-website/blob/main/main.css#L96-L99
+
+<h2>Ontwerpkeuzes</h2>
+Wij hebben voor deze sprint van school ook een opdracht gekregen om een micro-interactie te bouwen in JavaScript. Deze micro-interactie van mij is het hamburger menu geworden die je open en dicht kan klappen om de nav tevoorschijn te toveren. 
 
 
 ## Kenmerken
