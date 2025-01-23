@@ -6,6 +6,7 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 <h2>OntdekDeSchoonmaak</h2>
 Ik heb een opdracht gekregen vanuit het frontendbedrijf ActiveCollective om de pagina van OntdekDeSchoonmaak te ontwerpen met nieuwe ontwerpkeuzes. Zo zou het bedrijf mogelijk goede ideëen op kunnen pakken, en deze in de orginele site gebruiken. 
 
+
 Het probleem was dat de pagina mobile first nog niet helemaal perfect was, en dat mensen vaak na 2 keer scrollen over de pagina al wegklikte. Ik heb dit opgelost door de pagina zo compact mogelijk te maken, en alsnog makkelijk te gebruiken.
 
 ## Beschrijving
@@ -59,10 +60,15 @@ https://github.com/RickFDND/the-startup-responsive-interactive-website/blob/6529
 
 ## Bronnen
 https://github.com/fdnd-task/the-startup-responsive-interactive-website/blob/main/docs/mobile-first.md
+
 https://github.com/fdnd-task/the-startup-responsive-interactive-website/blob/main/docs/refactoring-code-conventions.md
+
 https://github.com/fdnd-task/the-client-website/blob/main/docs/code-conventies.md#geef-je-html-ademruimte
+
 https://github.com/fdnd-task/the-client-website/blob/main/docs/code-conventies.md#schrijf-je-css-selectors-in-dezelfde-volgorde-als-de-html
+
 https://github.com/fdnd-task/the-client-website/blob/main/docs/code-conventies.md#nest-je-media-queries
+
 https://github.com/fdnd-task/the-startup-responsive-interactive-website/blob/main/docs/interaction-design.md
 
 ## Licentie
