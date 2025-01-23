@@ -232,7 +232,7 @@ main {
     border: solid 1px ;
     border-radius: 20px;
     min-height: 455px;
-    min-width: 350px;
+    min-width: 340px;
     max-width: 350px;
     object-fit: cover;
 
@@ -245,6 +245,9 @@ main {
       border-top-right-radius: 20px;
       width: 100%;
       height: 12rem;
+    }
+    a {
+      margin-bottom: 0.4em;
     }
   }
 
@@ -315,7 +318,7 @@ main {
     border: solid 1px ;
     border-radius: 20px;
     min-height: 460px;
-    min-width: 350px;
+    min-width: 340px;
 
     p{
       width: 320px;
@@ -350,8 +353,7 @@ main {
 .cleaning-numbers {
   margin: auto;
   overflow: hidden;
-  justify-content: center;
-  
+  justify-items: center;
   }
 
 .slider {
@@ -366,17 +368,21 @@ main {
 
   @media(min-width: 736px) {
     animation: none;
-    justify-content: center;
+    column-gap: 7em;
+  }
+
+  @media(min-width: 736px) {
+    .duplicate {
+      display: none;
+      position: absolute;
+    }
   }
 
   .stats {
-    display: grid;
-    justify-content: center;
-    width: 200px;
 
    @media(min-width: 736px) {
       width: 100%;
-      height: 200px;
+      height: 250px;
     }
     
     h2 {
@@ -387,15 +393,7 @@ main {
       font-size: 24px;
       font-weight: bold;
     }
-  
-    .duplicate {
 
-      @media(min-width: 736px) {
-      display: none;
-      position: absolute;
-      }
-
-    }
   }
 }
 
