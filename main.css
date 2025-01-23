@@ -259,7 +259,7 @@ main {
 .information {
   margin: 1em;
   text-align: center;
-  justify-self: center;
+  margin-inline: auto;
   max-width: 40em;
   padding-top: 2em;
   padding-bottom: 2em;
@@ -274,6 +274,10 @@ main {
 
   @media(min-width:700px) {
     margin-inline: auto;
+  }
+
+  a{
+       
   }
 
   .form-open{
@@ -359,7 +363,9 @@ main {
   padding-top: 2em;
   
   @media(min-width: 736px) {
+    display: grid;
     justify-items: center;
+    margin-inline: auto;
   }
   }
 
@@ -422,13 +428,15 @@ main {
   
   .socials {
     display: flex;
+    justify-content: center;
     gap: 15%;
     padding-top: 1em;
+    padding-inline: 2em;
   }
 
   img {
-    width: 100%; 
-    max-width:175px;
+    width: 100%;    
+    max-width:150px;
   }
 } 
 
