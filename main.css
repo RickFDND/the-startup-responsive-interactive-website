@@ -272,7 +272,7 @@ main {
   }
 
   .form-open{
-    opacity: 0;
+    display: none;
     position: absolute;
     color: black;
     padding: 2em;
@@ -295,7 +295,7 @@ main {
 
 .newsletter-open {
   .form-open{
-    opacity: 1;
+    display: block;
     position:inherit;
   }
 }
@@ -349,60 +349,60 @@ main {
 
 .cleaning-numbers {
   margin: auto;
-  display: grid;
+  overflow: hidden;
   justify-content: center;
-  max-width: 380px;
-
-    @media (min-width:500px) {
-      max-width: 500px;
-    }
-    @media (min-width:600px) {
-      max-width: 700px;
-    }
-    @media (min-width:800px) {
-      max-width: 800px;
-    }
-    @media (min-width:900px) {
-      max-width: 900px;
-    }
-    @media (min-width:1100px) {
-      max-width: 100%;
-    }
+  
   }
 
 .slider {
   display: flex;
-  overflow: hidden;
-  height: 220px;
-  width: 100%;
+  list-style-type: none;
+  width: max-content;
   position: relative;
-  column-gap: 7em;
-  z-index: -10;
-  margin-top: 1em;
+  animation: Slideshow 10s linear infinite;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  z-index: -5;
+
+  @media(min-width: 736px) {
+    animation: none;
+    justify-content: center;
+  }
 
   .stats {
     display: grid;
-    width: 100px;
-    height: 200px;
-    animation: Slideshow 15s linear infinite;
+    justify-content: center;
+    width: 200px;
 
-    @media(min-width: 736px) {
-      animation: none;
+   @media(min-width: 736px) {
+      width: 100%;
+      height: 200px;
     }
-
+    
     h2 {
       font-size: 16px;
+      font-weight: 300;
+    }
+    p {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    .duplicate {
+
+      @media(min-width: 736px) {
+      display: none;
+      position: absolute;
+      }
+
     }
   }
 }
 
 @keyframes Slideshow {
   0% { transform: translateX(0); }
-  20% { transform: translateX(-150%); }
-  40% { transform: translateX(-300%); }
-  60% { transform: translateX(-450%); }
-  80% {transform:translateX(-600%);}
-  100% { transform: translateX(0); }
+ 
+  100% { transform: translateX(-50%); }
 }
 
 .follow-us {
